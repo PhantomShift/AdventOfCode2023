@@ -58,6 +58,8 @@ func main() {
 		dayFunc = day4
 	case 5:
 		dayFunc = day5
+	case 6:
+		dayFunc = day6
 	default:
 		fmt.Printf("Day %d has not been implemented yet\n", day)
 		return
