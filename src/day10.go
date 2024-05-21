@@ -33,31 +33,31 @@ func clamp[T cmp.Ordered](x, low, high T) T {
 type position struct{ x, y int }
 
 var TileMapping = map[rune][]position{
-	'|': []position{
+	'|': {
 		position{x: 0, y: -1},
 		position{x: 0, y: 1},
 	},
-	'-': []position{
+	'-': {
 		position{x: -1, y: 0},
 		position{x: 1, y: 0},
 	},
-	'L': []position{
+	'L': {
 		position{x: 0, y: -1},
 		position{x: 1, y: 0},
 	},
-	'J': []position{
+	'J': {
 		position{x: 0, y: -1},
 		position{x: -1, y: 0},
 	},
-	'7': []position{
+	'7': {
 		position{x: 0, y: 1},
 		position{x: -1, y: 0},
 	},
-	'F': []position{
+	'F': {
 		position{x: 0, y: 1},
 		position{x: 1, y: 0},
 	},
-	'S': []position{
+	'S': {
 		position{x: 0, y: -1},
 		position{x: 0, y: 1},
 		position{x: -1, y: 0},
